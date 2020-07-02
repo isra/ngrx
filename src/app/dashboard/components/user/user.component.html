@@ -1,0 +1,14 @@
+<div class="card shadow-sm px-2 py-2">
+  <img
+    src="{{ user.avatar }}"
+    alt="..."
+    class="rounded-circle card-img-top mt-2"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ user.first_name }} {{ user.last_name }}</h5>
+    <p class="card-text">
+      {{ user.email }}
+    </p>
+    <a href="#" class="btn btn-danger" (click)="remove($event)">Remove</a>
+  </div>
+</div>
